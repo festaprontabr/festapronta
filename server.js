@@ -3,7 +3,7 @@ const app = express();
 var mustache = require('mustache');
 var engines = require('consolidate');
 
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(path.join(__dirname, '/dist')));
 
 app.set('views', __dirname + '/dist');
 app.engine('html', engines.mustache);
