@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-var mustache = require('mustache');
 var engines = require('consolidate');
 
 app.use(express.static(__dirname + '/dist'));
